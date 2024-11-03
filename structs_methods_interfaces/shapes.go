@@ -30,3 +30,12 @@ func Area(rectangle Rectangle) float64 {
 type Shape interface {
 	Area() float64
 }
+
+type Triangle struct {
+	Width  float64
+	Height float64
+}
+
+func (t Triangle) Area() float64 {
+	return (t.Width * t.Height) * 0.5
+}
